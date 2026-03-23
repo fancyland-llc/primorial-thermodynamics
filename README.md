@@ -29,6 +29,7 @@ We prove that the IPB98(y,2) empirical scaling law for energy confinement time i
 **Companion papers:**
 - "Spectral Isotropy and the Exact Temperature of the Prime Gas," Matos (2026). DOI: [10.5281/zenodo.19156532](https://doi.org/10.5281/zenodo.19156532)
 - "The Prime Column Transition Matrix Is a Boltzmann Distribution at Temperature ln(N)," Matos (2026). DOI: [10.5281/zenodo.19076680](https://doi.org/10.5281/zenodo.19076680)
+- "Separable Gyro-Bohm Scaling for Fusion Energy Confinement: Resolving the Isotope Sign Conflict," Matos (2026). DOI: [10.5281/zenodo.19117880](https://doi.org/10.5281/zenodo.19117880)
 
 ## Repository structure
 

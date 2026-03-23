@@ -14,6 +14,7 @@
 
 - "Spectral Isotropy and the Exact Temperature of the Prime Gas," Matos (2026), DOI: [10.5281/zenodo.19156532](https://doi.org/10.5281/zenodo.19156532)
 - "The Prime Column Transition Matrix Is a Boltzmann Distribution at Temperature ln(N)," Matos (2026), DOI: [10.5281/zenodo.19076680](https://doi.org/10.5281/zenodo.19076680)
+- "Separable Gyro-Bohm Scaling for Fusion Energy Confinement: Resolving the Isotope Sign Conflict," Matos (2026), DOI: [10.5281/zenodo.19117880](https://doi.org/10.5281/zenodo.19117880)
 
 ---
 
@@ -374,7 +375,7 @@ An exhaustive scan of 60+ physically motivated dimensionless combinations across
 
 The number 7 enters the $m = 30$ algebraic structure through multiple independent routes ($\varphi - 1$, trace, divisor gap, collisionality denominator), and it is the largest prime in $m = 210$. Whether it selects a physical observable at the $m = 30 \to 210$ transition — a normalized rotation frequency, a safety factor, a mode number, or an information-theoretic threshold — is the central open problem for the falsifiable test.
 
-**Falsifiable test.** Run nonlinear gyrokinetic simulations (GENE [12] or CGYRO [13]) scanning toroidal rotation from sub-sonic to sonic Mach numbers. At each rotation rate, fit the effective $\rho_*$, $\nu_*$, and $\epsilon$ exponents from a parameter scan. If the exponents shift from the $m = 30$ values $\{-5/8, +1/5, -2/7, -5/4\}$ toward the predicted $m = 210$ values $\{-7/48, +1/7, -2/47, -7/24\}$ at sufficiently high rotation, the primorial hierarchy is confirmed as physical reality. Without a first-principles derivation of $m = 30$ from gyrokinetic transport (§8.1), we cannot predict the specific rotation threshold; the test is exploratory rather than sharp.
+**Falsifiable test.** Run nonlinear gyrokinetic simulations (GENE [13] or CGYRO [14]) scanning toroidal rotation from sub-sonic to sonic Mach numbers. At each rotation rate, fit the effective $\rho_*$, $\nu_*$, and $\epsilon$ exponents from a parameter scan. If the exponents shift from the $m = 30$ values $\{-5/8, +1/5, -2/7, -5/4\}$ toward the predicted $m = 210$ values $\{-7/48, +1/7, -2/47, -7/24\}$ at sufficiently high rotation, the primorial hierarchy is confirmed as physical reality. Without a first-principles derivation of $m = 30$ from gyrokinetic transport (§8.1), we cannot predict the specific rotation threshold; the test is exploratory rather than sharp.
 
 If the exponents do not shift at any rotation rate, the primorial structure is mathematical coincidence rather than physical law, and that too is a clean result.
 
@@ -490,7 +491,7 @@ The results of this paper, combined with the hierarchy break at $m = 30030$ (§9
 
 **Open problems for the fusion community.**
 
-1. _Gyrokinetic verification._ Run nonlinear gyrokinetic simulations (GENE [12] or CGYRO [13]) on spherical tokamak equilibria with strong rotation, scanning from sub-sonic to sonic Mach numbers. At each rotation level, extract the effective $\rho_*$, $\nu_*$, and $\epsilon$ scaling exponents. Does any operating regime produce exponents consistent with the $m = 210$ predictions $\{-7/48, +1/7, -2/47, -7/24\}$?
+1. _Gyrokinetic verification._ Run nonlinear gyrokinetic simulations (GENE [13] or CGYRO [14]) on spherical tokamak equilibria with strong rotation, scanning from sub-sonic to sonic Mach numbers. At each rotation level, extract the effective $\rho_*$, $\nu_*$, and $\epsilon$ scaling exponents. Does any operating regime produce exponents consistent with the $m = 210$ predictions $\{-7/48, +1/7, -2/47, -7/24\}$?
 
 2. _FLR threshold._ Quantify the minimum number of primorial modes that can be sustained before ion gyro-orbit averaging destroys the discrete channel structure. Is $\varphi(210)/2 = 24$ safely above this limit at compact ST parameters?
 
@@ -714,19 +715,21 @@ The mechanism is: the Legendre characters $\chi_5$ and $\chi_3$ sort into opposi
 
 7. Matos, A. P. (2026). "The Prime Column Transition Matrix Is a Boltzmann Distribution at Temperature ln(N)." Preprint. DOI: 10.5281/zenodo.19076680.
 
-8. Tao, T. (2005). "An uncertainty principle for cyclic groups of prime order." _Math. Res. Lett._, 12(1), 121–127.
+8. Matos, A. P. (2026). "Separable Gyro-Bohm Scaling for Fusion Energy Confinement: Resolving the Isotope Sign Conflict." Preprint. DOI: 10.5281/zenodo.19117880.
 
-9. Chen, J. R. (1973). "On the representation of a larger even integer as the sum of a prime and the product of at most two primes." _Scientia Sinica_, 16(2), 157–176.
+9. Tao, T. (2005). "An uncertainty principle for cyclic groups of prime order." _Math. Res. Lett._, 12(1), 121–127.
 
-10. Burrell, K. H. (1997). "Effects of E × B velocity shear and magnetic shear on turbulence and transport in magnetic confinement devices." _Physics of Plasmas_, 4(5), 1499–1518.
+10. Chen, J. R. (1973). "On the representation of a larger even integer as the sum of a prime and the product of at most two primes." _Scientia Sinica_, 16(2), 157–176.
 
-11. Terry, P. W. (2000). "Suppression of turbulence and transport by sheared flow." _Reviews of Modern Physics_, 72(1), 109–165.
+11. Burrell, K. H. (1997). "Effects of E × B velocity shear and magnetic shear on turbulence and transport in magnetic confinement devices." _Physics of Plasmas_, 4(5), 1499–1518.
 
-12. Jenko, F. et al. (2000). "Electron temperature gradient driven turbulence." _Physics of Plasmas_, 7(5), 1904–1910.
+12. Terry, P. W. (2000). "Suppression of turbulence and transport by sheared flow." _Reviews of Modern Physics_, 72(1), 109–165.
 
-13. Candy, J. & Belli, E. A. (2016). "CGYRO: A new gyrokinetic-Maxwell solver." _Journal of Computational Physics_, 324, 73–93.
+13. Jenko, F. et al. (2000). "Electron temperature gradient driven turbulence." _Physics of Plasmas_, 7(5), 1904–1910.
 
-14. Berndt, B. C., Evans, R. J. & Williams, K. S. (1998). _Gauss and Jacobi Sums_. Wiley-Interscience.
+14. Candy, J. & Belli, E. A. (2016). "CGYRO: A new gyrokinetic-Maxwell solver." _Journal of Computational Physics_, 324, 73–93.
+
+15. Berndt, B. C., Evans, R. J. & Williams, K. S. (1998). _Gauss and Jacobi Sums_. Wiley-Interscience.
 
 ---
 
