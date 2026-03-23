@@ -667,7 +667,7 @@ $m = 30030$ & 13 & $\det \bmod 13 = 1$                       & $\det \bmod 13 = 
 }
 
 The exclusion holds at all 5 primorial levels and for 52 additional squarefree moduli (\texttt{ratio\_\allowbreak pattern\_\allowbreak hunter.py}).
-The $\sqrt{p_{\text{max}}}$ enters the scaling law \emph{only} through the Gauss sum, not through eigenvalue spectral algebra---generalizing Theorem~6.2. See \S9 for the $m = 30030$ verification.
+The $\sqrt{p_{\text{max}}}$ enters the scaling law \emph{only} through the Gauss sum, not through eigenvalue spectral algebra---generalizing Corollary~6.2. See \S9 for the $m = 30030$ verification.
 
 \begin{conjecture}[Determinant ratio is integer]
 The ratio $\det(D_{\text{even}})/\det(D_{\text{odd}})$ is always a negative integer divisible by a power of~3.
@@ -722,7 +722,7 @@ The results of this paper, combined with the hierarchy break at $m = 30030$ (\S9
 \textbf{The finite Larmor radius limit.} The $m = 2310$ regime ($p_{\text{max}} = 11$, $\varphi(2310)/2 = 240$ even-sector modes) is mathematically valid --- the polynomial hierarchy is integer-valued and the $p_{\text{max}}$-exclusion holds --- but is engineering-inaccessible at compact ST parameters ($\rho_i \gg \Delta r$) and marginal even at ITER ($\rho_i / \Delta r \approx 0.48$) due to finite Larmor radius (FLR) smearing. We estimate the characteristic radial scale of a single transport mode as $\Delta r \sim a / (\varphi(m)/2)$, treating the $\varphi(m)/2$ even-sector modes as uniformly distributed across the plasma minor radius; this estimate is heuristic, and the correct spatial structure requires gyrokinetic calculation. For $m = 2310$, this gives $\Delta r \approx a/240$. In a D--T fusion plasma, the normalized ion Larmor radius $\rho_* = \rho_i / a$ is typically $1/100$ to $1/200$, so $\rho_i \approx a/100$ to $a/200$. For $\rho_* > 1/240$, the ion gyro-orbit exceeds the mode spacing and adjacent transport channels couple incoherently. At compact spherical tokamak parameters ($\rho_* \sim 0.01$--$0.05$), the smearing is severe: $\rho_i \gg \Delta r$. Even at ITER parameters ($\rho_* \approx 0.002$, $\rho_i \approx a/500$), the margin $\rho_i / \Delta r \approx 0.48$ is thin. By contrast, the $m = 210$ lattice has $\Delta r \approx a/24$, safely above $\rho_i$ at all relevant parameters. If verified, this identifies $m = 210$ as the practical engineering ceiling for primorial confinement regimes.
 
 \medskip
-\textbf{What is proved.} The Legendre character $\chi_7$ enters the odd (boundary) sector because $7 \equiv 3 \pmod{4}$ (Theorem~8.5). The $m = 210$ exponents are $74\%$ flatter than $m = 30$ (\S8.3). The $\epsilon$ exponent drops from $-1.25$ to $-0.29$, removing the steep penalty against compact geometry. These are algebraic facts independent of any specific machine design.
+\textbf{What is proved.} The Legendre character $\chi_7$ enters the odd (boundary) sector because $7 \equiv 3 \pmod{4}$ (Theorem~8.1). The $m = 210$ exponents are $74\%$ flatter than $m = 30$ (\S8.3). The $\epsilon$ exponent drops from $-1.25$ to $-0.29$, removing the steep penalty against compact geometry. These are algebraic facts independent of any specific machine design.
 
 \begin{sloppypar}
 \medskip
@@ -859,7 +859,7 @@ The polynomial hierarchy holds as an integer-valued identity for $k = 0, 1, 2, 3
 
 \textbf{The obstruction is $p$-adic.} The hierarchy breaks not because the quadratic form fails, but because the coefficient $b_4$ acquires a denominator. The 3-adic valuation of~$R$ going negative propagates algebraically to make $b_4$ non-integer. The prime $p = 3$ --- the smallest odd prime --- is the obstruction.
 
-\textbf{$p_{\text{max}}$-exclusion survives.} Despite the hierarchy breaking, Conjecture~8.1 continues to hold: $\det(D_{\text{even}}) \bmod 13 \neq 0$ and $\det(D_{\text{odd}}) \bmod 13 \neq 0$. The exclusion of $p_{\text{max}}$ from both determinants is a deeper structural property than the polynomial hierarchy.
+\textbf{$p_{\text{max}}$-exclusion survives.} Despite the hierarchy breaking, Conjecture~8.2 continues to hold: $\det(D_{\text{even}}) \bmod 13 \neq 0$ and $\det(D_{\text{odd}}) \bmod 13 \neq 0$. The exclusion of $p_{\text{max}}$ from both determinants is a deeper structural property than the polynomial hierarchy.
 
 \textbf{Computational verification.} All results in \S\S9.1--9.5 are verified by \texttt{hierarchy\_\allowbreak termination\_\allowbreak proof.py} (88 assertions, 0~failures, ${\sim}\,3$~minutes) and \texttt{verify\_\allowbreak R30030\_\allowbreak final.py} (13 independent prime verifications, ${\sim}\,8$~minutes).
 
@@ -958,7 +958,7 @@ v_2(R) = 0, \quad v_3(R) = -1, \quad v_5(R) = 0, \quad v_7(R) = 0, \quad v_{11}(
 Every prime that divides $m = 30030$ except $p = 3$ has valuation exactly zero. The numerator 48317287 is itself prime, so no prime of any size divides $R(30030)$ except through the denominator~$3$. The entire topological complexity of the $2880 \times 2880$ matrix arithmetic --- built from 6 primes across 13 dimensions --- cancels perfectly, leaving only the single 3-adic obstruction.
 
 \medskip
-\textbf{Computational verification.} Theorem~9.6 is verified by \texttt{v3\_overnight.py}, which validates the mod-$3^k$ method against known exact valuations at $m = 210$ and $m = 2310$ before computing $m = 30030$. Total runtime ${\sim}\,6$ minutes on a consumer PC.
+\textbf{Computational verification.} Theorem~9.2 is verified by \texttt{v3\_overnight.py}, which validates the mod-$3^k$ method against known exact valuations at $m = 210$ and $m = 2310$ before computing $m = 30030$. Total runtime ${\sim}\,6$ minutes on a consumer PC.
 
 
 %% ====================================================================
@@ -986,8 +986,8 @@ $C_{210} = 48/\sqrt{7}$; sensitivity $74\%$ lower; $3.8\times$ wider burn window
 $m = 2310$: $\chi_{11}$ odd (240/240 pairs); $p_{\text{max}} = 11$ excluded from both dets & \textbf{Computed} (exact integer, 155 digits) & \S8.5 \\
 $\det(D_{\text{even}}(2310))/\det(D_{\text{odd}}(2310)) = -108927 = -3^2 \cdot 7^2 \cdot 13 \cdot 19$ & \textbf{Computed} (exact, 80s on consumer PC) & \S8.5 \\
 $p_{\text{max}}$-exclusion holds at 3 primorial levels: universal law & \textbf{Verified} ($k = 3, 4, 5$) & \S8.5 \\
-$p_{\text{max}}$-exclusion universal: 52 squarefree $m$ tested, all pass & \textbf{Verified} (Theorem~8.8) & \S8.5 \\
-$R(2m) = R(m)$ for odd~$m$ (factor of 2 irrelevant) & \textbf{Verified} (15 pairs; Theorem~8.9) & \S8.5 \\
+$p_{\text{max}}$-exclusion universal: 52 squarefree $m$ tested, all pass & \textbf{Verified} (Theorem~8.4) & \S8.5 \\
+$R(2m) = R(m)$ for odd~$m$ (factor of 2 irrelevant) & \textbf{Verified} (15 pairs; Theorem~8.5) & \S8.5 \\
 $R(p) = -((p-1)^2 - 2)/2$ for all primes $p \geq 3$ & \textbf{Verified} (14 primes; computational, no algebraic proof) & \S8.5 \\
 Polynomial hierarchy: $-2R(S \cup \{q\}) = a(S)q^2 + b(S)q - 1$ exactly quadratic & \textbf{Verified} (4 levels, 48 tests; Theorem~8.6) & \S8.5 \\
 $a$-recurrence: $a_{k+1} = a_k p_{k+1}^2 + b_k p_{k+1}$ at all 4 levels & \textbf{Verified} & \S8.5 \\
@@ -995,13 +995,13 @@ $R(1365) = -156123$ ($288 \times 288$, 2.4~min); $R(1785) = -275799$ ($384 \time
 $m = 2310$ FLR-inaccessible: $\rho_i / \Delta r \approx 0.48$ even at ITER; $m = 210$ is engineering ceiling & \textbf{Argued} (FLR smearing; marginal at ITER, severe at compact ST) & \S8.8 \\
 $R(30030) = -48317287/3$ (non-integer; 13 verified primes) & \textbf{Computed} (modular, ${\sim}\,8$~min) & \S9 \\
 $p_{\text{max}}$-exclusion at $m = 30030$: $\det \bmod 13 \neq 0$ for both blocks & \textbf{Computed} (modular Gauss elimination) & \S9 \\
-$p_{\text{max}}$-exclusion holds at all 5 primorial levels ($k = 2, \ldots, 6$) & \textbf{Verified} (Conjecture~8.1; universal) & \S8.5/\S9 \\
-Conjecture~8.2 (ratio always integer) \textbf{FALSIFIED} at $m = 30030$ & \textbf{Proved} (counterexample) & \S9 \\
+$p_{\text{max}}$-exclusion holds at all 5 primorial levels ($k = 2, \ldots, 6$) & \textbf{Verified} (Conjecture~8.2; universal) & \S8.5/\S9 \\
+Conjecture~8.3 (ratio always integer) \textbf{FALSIFIED} at $m = 30030$ & \textbf{Proved} (counterexample) & \S9 \\
 48317287 is prime; denominator $= p_{\text{min}} = 3$ & \textbf{Computed} (SymPy) & \S9 \\
 $v_3(R) = \{0, 3, 4, 2, -1\}$: goes negative at $m = 30030$ & \textbf{Computed} & \S9 \\
-Hierarchy breaks: $b_4 = -1062916/3$ (not integer; Theorem~9.4) & \textbf{Proved} & \S9 \\
+Hierarchy breaks: $b_4 = -1062916/3$ (not integer; Theorem~9.1) & \textbf{Proved} & \S9 \\
 88 independent assertions, 0 failures (\texttt{hierarchy\_termination\_proof.py}) & \textbf{Verified} & \S9 \\
-$v_3(\det_{\text{odd}}(30030)) = 947$ (prime); $v_3(\det_{\text{even}}(30030)) = 946 = 2 \times 11 \times 43$ & \textbf{Computed} (mod-$3^k$, converged at $k{=}3$; Theorem~9.6) & \S9.6 \\
+$v_3(\det_{\text{odd}}(30030)) = 947$ (prime); $v_3(\det_{\text{even}}(30030)) = 946 = 2 \times 11 \times 43$ & \textbf{Computed} (mod-$3^k$, converged at $k{=}3$; Theorem~9.2) & \S9.6 \\
 GF(3) nullity of both blocks $= 943$; polarity inversion at $m = 30030$ & \textbf{Computed} (rank 1937\,/\,2880) & \S9.6 \\
 Unpaired deep pivot: 4 pivots at $v{=}2$ (odd) vs~3 (even) in mod-9 elimination & \textbf{Computed} & \S9.6 \\
 $v_p(R(30030)) = 0$ for all $p \neq 3$; numerator 48317287 is prime & \textbf{Computed} ($p$-adic purity) & \S9.6 \\
@@ -1074,7 +1074,7 @@ Script & Tests & Description \\
 \texttt{ratio\_verify\_and\_predict.py} & 4  & Verify level~2 at 3 new primes, level~3 prediction at $q=17$ ($384 \times 384$, 5.9~min) \\
 \texttt{R30030\_crack.py}              & --- & Rational reconstruction of $R(30030)$ from 4 modular residues via half-GCD \\
 \texttt{bk\_elimination.py}            & --- & 20-round elimination of $b_k$ recurrence hypotheses \\
-\texttt{v3\_overnight.py}              & --- & Exact $v_3(\det_e)$, $v_3(\det_o)$ via mod-$3^k$ Gaussian elimination ($k = 1, 2, 3$); Theorem~9.6 \\
+\texttt{v3\_overnight.py}              & --- & Exact $v_3(\det_e)$, $v_3(\det_o)$ via mod-$3^k$ Gaussian elimination ($k = 1, 2, 3$); Theorem~9.2 \\
 \texttt{v3\_rabbit\_chase.py}          & --- & GF(3) nullity computation; initial $v_3$ table; full $v_p$ structure of $R(30030)$ \\
 \bottomrule
 \end{tabular}
